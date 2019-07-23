@@ -30,3 +30,14 @@ desc 'drop into the Pry console'
 task :console => :environment do
   Pry.start
 end
+
+# require_relative 'config/environment'
+
+# desc 'Will load a console with the environment'
+# task :console do
+#   def reload!
+#     load all 'app'
+#   end
+
+#   Pry.start
+# end
