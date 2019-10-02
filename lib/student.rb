@@ -13,7 +13,7 @@ class Student
     @id = id
     @name = name
     @grade = grade
-  #end
+  end
 
   def self.create_table
     sql =  <<-SQL
