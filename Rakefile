@@ -19,3 +19,15 @@ namespace :greeting do
     puts "hola de Rake!"
   end
 end
+
+namespace :db do
+  desc 'set us the db and creates tables'
+  task :migrate => :environment do
+     Student.create_table
+  end
+  
+  desc 'Adds test data to the db'
+  task :seed => :environment do
+     require_relative './db/seeds.rb'
+  end
+end
