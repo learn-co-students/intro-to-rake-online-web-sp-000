@@ -1,4 +1,5 @@
-require_relative "../lib/student.rb"
+require_relative"../lib/student.rb"
+
 
 Student.create(name: "Melissa", grade: "10th")
 Student.create(name: "April", grade: "10th")
